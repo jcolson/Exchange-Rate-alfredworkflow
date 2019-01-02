@@ -127,7 +127,11 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string></string>
+	<string>Exchange-Rate-alfredworkflow
+
+monetary exchange rate workflow for alfred
+
+Use this to see exchange rates in Alfred (replace the API key with a key that will work for you at fixer.io)</string>
 	<key>uidata</key>
 	<dict>
 		<key>21618F0E-B5AF-4B5D-AD77-C73A10E8A889</key>
@@ -152,6 +156,8 @@
 			<integer>240</integer>
 		</dict>
 	</dict>
+	<key>version</key>
+	<string>v1.0</string>
 	<key>webaddress</key>
 	<string>blackntan.com</string>
 </dict>
