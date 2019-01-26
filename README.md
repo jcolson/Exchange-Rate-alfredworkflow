@@ -3,7 +3,7 @@ monetary exchange rate workflow for alfred
 
 ## What does this do?
 
-Use this to see exchange rates in Alfred (replace the API key with a key that will work for you at fixer.io)
+Use this to see exchange rates in Alfred.  Get a free API key that will work for you at https://fixer.io/signup/free .  Once you have your api key, type "exr key [yourkeyhere]" into Alfred's hotkey modal to set your API key.
 
 ![Screenshot](https://raw.githubusercontent.com/jcolson/Exchange-Rate-alfredworkflow/master/exchangerate.png)
 
