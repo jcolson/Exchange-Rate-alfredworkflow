@@ -1,4 +1,4 @@
-#!//usr/local/bin/python
+#!/usr/bin/python
 # encoding: utf-8
 import sys
 from workflow import Workflow3
@@ -22,8 +22,8 @@ def main(wf):
     fixer_io_key = wf.settings['fixer_io_key']
     log.debug (wf.settings['fixer_io_key'])
     if fixer_io_key == "":
-        #wf.notify.notify(title="fixer.io key required",text="type 'ex key' to set API key for fixer.io")
-        wf.add_item(uid="ex key",title="type 'ex key' to set API key for fixer.io", valid=False)
+        #wf.notify.notify(title="fixer.io key required",text="type 'exr key' to set API key for fixer.io")
+        wf.add_item(uid="exr key",title="type 'exr key' to set API key for fixer.io", valid=False)
     else:
         symbols_parameter = "&symbols="+desired_base
         for symbol in symbols:
@@ -38,7 +38,7 @@ def main(wf):
         ##parsing response
         r = urllib2.urlopen(req).read()
         cont = json.loads(r.decode('utf-8'))
-        #log.debug (cont)
+        log.debug (cont)
         success = cont['success']
         if (success):
             #log.debug (success)
@@ -62,7 +62,7 @@ def main(wf):
             for symbol in symbols:
                 wf.add_item(uid=symbol,title=symbol,subtitle=cont["rates"][symbol],arg=cont["rates"][symbol])
         else:
-            wf.add_item(uid="ex key",title="fixer.io call failed, save your key via 'ex key'", valid=False)
+            wf.add_item(uid="exr key",title="fixer.io call failed, save your key via 'exr key'", valid=False)
     # Send output to Alfred
     wf.send_feedback()
 

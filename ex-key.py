@@ -1,4 +1,4 @@
-#!//usr/local/bin/python
+#!/usr/bin/python
 # encoding: utf-8
 import sys
 from workflow import Workflow3
@@ -19,7 +19,7 @@ def main(wf):
         wf.settings.save()
         log.debug("set the key to: "+args[0])
     else:
-       wf.add_item(uid="ex key",title="set the key")
+       wf.add_item(uid="exr key",title="set the key")
 
     wf.send_feedback()
 
